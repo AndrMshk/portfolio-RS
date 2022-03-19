@@ -1,0 +1,31 @@
+.video {
+  background-image: url(../img/video/video-player.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 705px;
+  padding: 0 20px;
+  position: relative;
+}
+.video input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 130px;
+  width: 130px;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+.video input:hover {
+  filter: invert(26%) sepia(15%) saturate(638%);
+  transition: all 1s;
+}
+@media screen and (max-width: 768px) {
+  .video {
+    height: 418px;
+    background-size: 100%;
+  }
+  .video input {
+    width: 64px;
+    height: 64px;
+  }
+}

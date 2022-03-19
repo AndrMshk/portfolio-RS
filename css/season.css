@@ -1,0 +1,41 @@
+.season {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.season_btn {
+  width: 220px;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  height: 55px;
+  background-color: var(--background);
+  color: var(--section-title);
+  transition: all 0.5s;
+}
+.season button:hover {
+  color: var(--hover);
+}
+.season_btn.active {
+  background: #bdae82;
+  color: var(--background);
+}
+.season_btn.active:hover {
+  color: var(--active);
+}
+@media screen and (max-width: 1000px) {
+  .season {
+    width: 445px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .season {
+    width: 90%;
+  }
+}
